@@ -260,7 +260,7 @@ h1,h2,h3,h4,h6,a,p,li{
     transition: font-size 1s ease;
 }
 h1:hover,h2:hover,h3:hover,h4:hover,h6:hover,a:hover,p:hover,li:hover{
-    font-size: 150%;
+    font-size: 125%;
 }
 
 section{
