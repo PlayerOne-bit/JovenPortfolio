@@ -148,7 +148,7 @@ header{
     border-radius: 10px 0 0 10px;
     margin: 10% 0 10% 10%;
     width: auto;
-    transition:border-left 1s ease, border-radius 1s ease, font-size 1s ease,box-shadow 1s ease;;
+    transition:border-left 1s ease, border-radius 1s ease,box-shadow 1s ease;;
     div{
         padding: 5%;
         h1{
@@ -173,7 +173,6 @@ header{
 }
 #info:hover{
     box-shadow: -10px 10px 20px rgb(255, 255, 255);
-    font-size: 1.01em;
     border-left:20px solid darkred;
     border-radius: 20px 0 0 20px;
 }
@@ -187,14 +186,13 @@ header{
     margin: 10% 10% 10% 10%;
     width: auto;
     padding: 5%;
-    transition:border-left 1s ease,border-right 1s ease, border-radius 1s ease, font-size 1s ease,box-shadow 1s ease;;
+    transition:border-left 1s ease,border-right 1s ease, border-radius 1s ease,box-shadow 1s ease;;
     h1{
         text-align: center;
     }
 }
 #projects:hover{
     box-shadow: 0 10px 20px rgb(255, 255, 255);
-    font-size: 1.01em;
     border-left:20px solid darkred;
     border-right:20px solid darkred;
     border-radius: 20px 20px 20px 20px;
@@ -207,14 +205,13 @@ header{
     margin: 10% 10% 10% 0;
     width: auto;
     padding: 5%;
-    transition:border-right 1s ease, border-radius 1s ease, font-size 1s ease,box-shadow 1s ease;;
+    transition:border-right 1s ease, border-radius 1s ease,box-shadow 1s ease;;
     h1{
         text-align: center;
     }
 }
 #work-experience:hover{
     box-shadow: 10px 10px 20px rgb(255, 255, 255);
-    font-size: 1.01em;
     border-right:20px solid darkred;
     border-radius: 0 20px 20px 0;
 }
@@ -263,7 +260,7 @@ h1,h2,h3,h4,h6,a,p,li{
     transition: font-size 1s ease;
 }
 h1:hover,h2:hover,h3:hover,h4:hover,h6:hover,a:hover,p:hover,li:hover{
-    font-size: 125%;
+    font-size: 150%;
 }
 
 section{
@@ -278,7 +275,7 @@ footer{
 body{
     background-image: linear-gradient(to right, rgb(41, 41, 41), rgb(92, 92, 92));
     margin: 0;
-    font-family:"Comic Sans MS", sans-serif;
+    font-family:'Comic Sans MS',sans-serif;
 }
 @media (max-width:768px) {
     header{
