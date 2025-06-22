@@ -263,7 +263,7 @@ h1,h2,h3,h4,h6,a,p,li{
     transition: font-size 1s ease;
 }
 h1:hover,h2:hover,h3:hover,h4:hover,h6:hover,a:hover,p:hover,li:hover{
-    font-size: 150%;
+    font-size: 125%;
 }
 
 section{
@@ -278,7 +278,7 @@ footer{
 body{
     background-image: linear-gradient(to right, rgb(41, 41, 41), rgb(92, 92, 92));
     margin: 0;
-    font-family: cursive;
+    font-family:"Comic Sans MS", sans-serif;
 }
 @media (max-width:768px) {
     header{
