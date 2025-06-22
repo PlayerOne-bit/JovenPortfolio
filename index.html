@@ -4,48 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joven's Website</title>
-    <link rel="icon" href="LogoP1.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="icon" href="images/LogoP1.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
     <header>
+        <div class="header-container">
+            <div class="title-container">
+                <a class="logo" href="index.html">
+                    <img src="images/LogoP1.jpg" alt="Logo">
+                </a>
+                <h2>Joven Claudio's Website</h2>
+            </div>   
+            <button class="menu">☰</button>
+        </div>
         <nav>
-            <a href="index.html">
-                <img src="LogoP1.jpg" alt="Logo" height="50">
-            </a>
-            <div>Joven Claudio's Website<br></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#learnings">Learnings</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <button class="navBtn" data-peek="home">Home</button>
+            <button class="navBtn" data-peek="projects">Projects</button>
+            <button class="navBtn" data-peek="work-experience">Work</button>
+            <button class="navBtn" data-peek="learnings">Learnings</button>
+            <button class="navBtn" data-peek="contact">Contact</button>
         </nav>
-    </header>
 
-    <main style="background-color: black;">
+    </header>
+    <div class="darken"></div>
+
+    <div class="sidebar">
+        <h3>MENU</h3>
+            <hr>
+        <button class="navBtn" data-peek="home">Home</button>
+        <button class="navBtn" data-peek="projects">Projects</button>
+        <button class="navBtn" data-peek="work-experience">Work</button>
+        <button class="navBtn" data-peek="learnings">Learnings</button>
+        <button class="navBtn" data-peek="contact">Contact</button>
+    </div>
+    <main>
         <section id="home">
-            <div id="box">
-                <image id="void" src="VoidNullius.gif"></image>
-                <h1>Hello! I'm Joven </h1><h3>aka Player*One, Wakai</h3>
-                <p>a Future Software Engineer<br>and Game Developer</p>
-                <image id="me" src="simplified.png"></image>
+            <div class="WhoAmI">
+                <img id="void" src="images/VoidNullius.gif">
+                <div>
+                    <h1>Hello! I'm Joven </h1>
+                    <h3>aka Player*One, Wakai</h3>
+                    <p>a Future Software Engineer and Game Developer</p>
+                    <p>Welcome to my website! I will show you around</p>
+                </div>
+                
             </div>
         </section>
 
         <section id="info">
+
+            <div>
+                <a href="https://www.youtube.com/watch?v=xMHJGd3wwZk&t=1s"><img id="me" src="images/simplified.png"></a>
                 <h1>Joven Kallos Claudio</h1>
                 <h3>Tiwi, Albay, Philippines</h3>
                 <p>I'm Joven Claudio, a 19-year-old developer who likes to create 2D & 3D videogames, web application, desktop and mobile application, I am passionate about making stories and inspiring people to make a bridge and connect people together. I serve the best-quality software to my client's needs, and I will keep on learning other platforms and programming languages to bring your dreams a reality</p>
+                
+            </div>
+            
         </section>
-
-
+        <hr>
+        <hr>
+        <hr>
         <section id="projects">
             <h1>Projects</h1>
             <ul>
-                <li><a>Human '65'pocalypse(Game Under Development)</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=xMHJGd3wwZk&t=1s">Human '65'pocalypse(Game Under Development)</a></li>
                     <ul><li ><u>About this game:</u><br> &emsp; 
                             Welcome to the developed planet of the year 3000, where humanity made the highest level of progress and established its own nation.
                             Their survival is put to the test as an Unknown Entity enters their universe and declares the 65 apocalypse.
@@ -63,8 +88,7 @@
         </section>
 
         <div id="learnings">
-            <div class="flip-card">
-            <div class="flip-card-front">
+            <div class="skill">
                 <h3>Skills</h3>
                 <ul>
                     <li><b>Computer Literate</b></li>
@@ -75,27 +99,27 @@
                     <li><b>Can work under pressure to meet tight deadlines</b></li>
                     <li><b>Programming Languages Learned:</b><br>&emsp; C++, Java, Python, C#, Javascript</li>
                 </ul>
-                <p><u>(Tap to see more)</u></p>
             </div>
-            <div class="flip-card-back">
+            <div class="education">
                 <h3>Educational Attainment</h3>
                 <ul>
                     <li><b>Course:</b> Bachelor of Science in Information Technology</li>
                     <li><b>Tertiary:</b> STI College Legazpi<br>&emsp; Cabangan East, Legazpi City, 4500 Albay<br>&emsp; Expected Year Graduate: 2028</li>
                     <li><b>Secondary:</b> Tabaco National High School<br>&emsp; Panal, Tabaco City, 4511 Albay<br>&emsp;Year Graduated: 2018-2024</li>
                     <li><b>Primary:</b> Tiwi Central School<br>&emsp; Gajo, Tiwi, 4513 Albay<br>&emsp;Year Graduated: 2012-2018</li>
-                    <p><u>(Tap to return)</u></p>
                 </ul>
             </div>
-            </div>
         </div>
+        <hr>
+        <br>
         
-        <section id="contact">
-            <h1>Contact</h1>
-            <h3>Phone Number:</h3><p>09289535585</p>
-            <h3>Facebook: </h3><a href="https://www.facebook.com/joven.claudio.24/"><p>Joven K Claudio</p></a>
-            <h3>Email:</h3><p>joven.claudio.k@gmail.com</p>
-        </section>
+        <footer id="contact">
+            <h3>Contact</h3>
+            <h4>Phone Number:</h4><p>09289535585</p>
+            <h4>Facebook: </h4><a href="https://www.facebook.com/joven.claudio.24/"><p>Joven K Claudio</p></a>
+            <h4>Email:</h4><p>jovenkclaudio24@gmail.com</p>
+        </footer>
     </main>
 </body>
+<script src="js/script.js"></script>
 </html>

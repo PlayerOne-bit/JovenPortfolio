@@ -1,0 +1,318 @@
+header{
+    position:fixed;
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: darkred;
+    .header-container{
+        padding: 10px;
+        display: flex;
+        .title-container{
+            display: flex;
+            align-items: center;
+            img{
+                border-radius: 25px;
+            }
+            h2{
+                margin: 10px
+            }
+        }
+        .menu{
+            border-radius:10px ;
+            font-size: 3em;
+            color:white;
+            padding: 10px;
+            background-color: darkred;
+            border: none;
+            display:none;
+        }
+        .menu:hover{
+            background-color: rgb(255, 0, 0);
+        }
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        .navBtn{
+            font-size: 75%;
+            grid-row:2;
+            border:none;
+            background-color: darkred;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navBtn:hover{
+            background-color: rgb(255, 0, 43);
+            color: pink;
+        }
+    }    
+}
+
+.darken{
+    position: fixed;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    visibility: hidden;
+    transition:opacity 0.3s ease, background-color 0.3s ease;
+}
+.darken.show{
+    opacity: 1;
+    visibility:visible;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.sidebar{
+    text-align: center;
+    position:fixed;
+    z-index: 5;
+    right: -100%;
+    transition: right 0.5s ease-out;
+    height: 100%;
+    background-color: rgb(170, 0, 0);
+    color: white;
+    width: 50%;
+    font-size: 2em;
+    .navBtn{
+        font-size: 1rem;
+        display:flex;
+        flex-direction: column;
+        background-color: rgb(170, 0, 0);
+        width: 100%;
+        border: none;
+        color: white;            
+        padding: 10px;            
+        text-align: center;    
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .navBtn:hover{
+        background-color: rgb(255, 0, 43);
+        color: pink;
+    }
+}
+.sidebar.show{
+    right:-1%;
+}
+
+
+
+#home{
+    text-align: justify;
+    background-image: url("../images/Website.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10% 0 10% 0;
+    .WhoAmI{
+        margin: 0;
+        display: flex;
+        align-items: space-between;
+        width: 50%;
+        padding: 12% 0 0 0;
+        div{
+            background-color: lightgray;
+            border-radius: 10px 10px 10px 10px;
+            border-right:0 solid darkred ;
+            padding: 20px;
+            transition:border-right 1s ease, border-radius 1s ease,box-shadow 1s ease-in-out;
+            box-shadow: 5px 5px 15px black ;
+            width: auto;
+        }
+        div:hover{
+            box-shadow: 5px 5px 15px rgb(255, 255, 255) ;
+            border-radius: 10px 20px 20px 10px;
+            border-right:10px solid darkred ;
+        }
+        img{
+            height: 75%;
+            width: 50%;
+        }
+    }
+
+}
+
+#info{
+    text-align: justify;
+    box-shadow: -10px 10px 20px black;
+    border-left:0 solid darkred;
+    border-radius: 10px 0 0 10px;
+    margin: 10% 0 10% 10%;
+    width: auto;
+    transition:border-left 1s ease, border-radius 1s ease, font-size 1s ease,box-shadow 1s ease;;
+    div{
+        padding: 5%;
+        h1{
+            border-bottom: 0 solid darkred;
+            border-radius: 0 0 0 0;
+            transition:border-bottom 1s ease-in;
+            width:40%;
+        }
+        h1:hover{
+            
+            border-radius: 0 0 0 10px;
+            border-bottom: 5px solid darkred;
+        }
+        img{
+            border-radius: 20px;
+            float:right;
+            margin: 20px;
+            height: auto;
+            width: 25%;
+        }
+    }
+}
+#info:hover{
+    box-shadow: -10px 10px 20px rgb(255, 255, 255);
+    font-size: 1.01em;
+    border-left:20px solid darkred;
+    border-radius: 20px 0 0 20px;
+}
+
+#projects{
+    text-align: justify;
+    box-shadow: 0 10px 20px black;
+    border-left:0 solid darkred;
+    border-right:0 solid darkred;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10% 10% 10% 10%;
+    width: auto;
+    padding: 5%;
+    transition:border-left 1s ease,border-right 1s ease, border-radius 1s ease, font-size 1s ease,box-shadow 1s ease;;
+    h1{
+        text-align: center;
+    }
+}
+#projects:hover{
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+    font-size: 1.01em;
+    border-left:20px solid darkred;
+    border-right:20px solid darkred;
+    border-radius: 20px 20px 20px 20px;
+}
+#work-experience{
+    text-align: justify;
+    box-shadow: 10px 10px 20px black;
+    border-right:0 solid darkred;
+    border-radius: 0 10px 10px 0;
+    margin: 10% 10% 10% 0;
+    width: auto;
+    padding: 5%;
+    transition:border-right 1s ease, border-radius 1s ease, font-size 1s ease,box-shadow 1s ease;;
+    h1{
+        text-align: center;
+    }
+}
+#work-experience:hover{
+    box-shadow: 10px 10px 20px rgb(255, 255, 255);
+    font-size: 1.01em;
+    border-right:20px solid darkred;
+    border-radius: 0 20px 20px 0;
+}
+
+#learnings{
+    display: flex;
+    justify-content: space-between;
+    h3{
+        text-align: center;
+    }
+    .skill{
+        padding:10px;
+        margin: 20px 10px 20px 0;
+        background-color: white;
+        border-radius: 0 20px 20px 0;
+        width:100%;
+        border-right:0 solid darkred;
+        box-shadow: 5px 5px 15px black ;
+        transition:border-right 1s ease, border-radius 1s ease,box-shadow 1s ease;
+    }
+    .skill:hover{
+        border-radius: 0 30px 30px 0;
+        border-right: 20px solid darkred;
+        box-shadow: 5px 5px 15px white ;
+
+    }
+    .education{
+        padding: 10px;
+        width: 100%;
+        margin: 20px 0 20px 10px;
+        background-color: white;
+        border-radius: 20px 0 0 20px;
+        border-left:0 solid darkred;
+        box-shadow: 5px 5px 15px black ;
+        transition:border-left 1s ease, border-radius 1s ease,box-shadow 1s ease;
+    }
+    .education:hover{
+        border-left:20px solid darkred;
+        border-radius: 30px 0 0 30px;
+        box-shadow: 5px 5px 15px white ;
+    }
+}
+
+h1,h2,h3,h4,h6,a,p,li{
+    font-size: 100%;
+    transition: font-size 1s ease;
+}
+h1:hover,h2:hover,h3:hover,h4:hover,h6:hover,a:hover,p:hover,li:hover{
+    font-size: 150%;
+}
+
+section{
+    background-color: white;
+}
+
+footer{
+    background-color:rgb(0, 0, 0) ;
+    color: rgb(116, 116, 116);
+    padding: 20px;
+}
+body{
+    background-image: linear-gradient(to right, rgb(41, 41, 41), rgb(92, 92, 92));
+    margin: 0;
+    font-family: cursive;
+}
+@media (max-width:768px) {
+    header{
+        grid-template-columns: 1fr 0;
+
+        .header-container{
+            justify-content: space-between;
+            .menu{
+
+                display: block;
+            }
+        }
+
+    }
+
+
+    #home{
+
+        padding: 20% 0 10% 0;
+        .WhoAmI{
+            flex-direction: column;
+            align-items: center;
+            img{
+                height: 75%;
+                width: 100%;
+            }
+        }
+    }
+    #info{
+        div{
+            img{
+                height: 50%;
+                width: 50%;
+            }
+        }
+    }
+}
