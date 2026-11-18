@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wakai — Software & Game Developer</title>
+<title>Wakai (Joven Claudio) — Software Developer</title>
+<meta name="description" content="Wakai (Joven Kallos Claudio) — full-stack and mobile developer. IT student at STI College Legazpi.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -316,7 +317,7 @@
     background: var(--red);
   }
 
-  .log-links { margin-top: 14px; display: flex; gap: 16px; }
+  .log-links { margin-top: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
   .log-links a {
     font-size: 14.5px;
     font-weight: 600;
@@ -380,6 +381,7 @@
     <div class="logo">WAKAI<span>.</span></div>
     <nav class="links">
       <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -395,7 +397,7 @@
     <div>
       <div class="eyebrow-line">building software &amp; games<span class="cursor"></span></div>
       <h1 class="hero-title">Wakai</h1>
-      <p class="hero-sub">Full-stack and mobile developer under the brand <strong>Level Origin</strong> — available for freelance builds and full-time junior developer roles.</p>
+      <p class="hero-sub">Full-stack and mobile developer — open to internships, freelance builds, and junior developer roles.</p>
       <div class="cta-row">
         <a href="#work" class="btn btn-primary">See my work</a>
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
@@ -404,7 +406,7 @@
     <div class="stat-panel">
       <div class="stat-label">Currently</div>
       <div class="stat-value">Year 3</div>
-      <div class="stat-note">IT student at STI College, shipping real projects since year one.</div>
+      <div class="stat-note">BS Information Technology at STI College Legazpi, shipping real projects since year one.</div>
     </div>
   </section>
 
@@ -415,7 +417,7 @@
     </div>
     <div class="about-text">
       <p>I originally set out to study accounting — that plan didn't work out, and I ended up at STI College instead. It turned out to be the right accident: STI is known for its game development track, which connected straight back to a dream I'd had since elementary school.</p>
-      <p>Since then the plan has been simple — <strong>build a stable career as a software developer</strong>, and keep game development alive as a craft I care about on the side. I started with C++ fundamentals before first year even began, moved fast through Java, and by second year was directing a small team through our first game jam. Now in third year, I'm building real, shippable projects instead of just class exercises.</p>
+      <p>Since then the plan has been simple — <strong>build a stable career as a software developer</strong>, and keep game development alive as a craft I care about on the side. I started with C++ fundamentals before first year even began, moved fast through Java, and by second year was directing a small team through our first game jam. Now in third year, I'm building real, shippable projects instead of just class exercises, with a focus on apps that solve real problems and clean, polished interfaces.</p>
     </div>
   </section>
 
@@ -438,8 +440,22 @@
         <li>This website is the client- and employer-facing front door for the same project</li>
       </ul>
       <div class="log-links">
-        <a href="#">View on GitHub</a>
+        <a href="https://github.com/PlayerOne-bit">View on GitHub</a>
       </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-meta">
+        <span class="log-version">Client build</span>
+        <span class="status-tag">Shipped</span>
+      </div>
+      <h3>JCKC Accounting and Bookkeeping Services App</h3>
+      <div class="log-stack">Java · JavaFX</div>
+      <ul>
+        <li>Desktop app for managing taxpayers and clients, covering sales, purchases, and suppliers</li>
+        <li>Built to make SLSP preparation faster and more efficient</li>
+        <li>Includes a BIR confirmation email feature for taxpayer confirmations</li>
+      </ul>
     </div>
 
     <div class="log-entry">
@@ -450,12 +466,12 @@
       <h3>TindHERO</h3>
       <div class="log-stack">Unity · C#</div>
       <ul>
-        <li>2D simulation game teaching financial literacy through a Filipino sari-sari store, built for a young local audience</li>
+        <li>2D Android simulation game teaching financial literacy through a Filipino sari-sari store, built for a young local audience</li>
         <li>10+ interacting systems: transaction handling, customer flow, round and lives management, XP progression, wallet tracking</li>
         <li>Custom Philippine Peso denomination assets and drag-and-drop transaction mechanics</li>
       </ul>
       <div class="log-links">
-        <a href="#">View on GitHub</a>
+        <a href="https://github.com/PlayerOne-bit">View on GitHub</a>
       </div>
     </div>
 
@@ -467,73 +483,185 @@
       <h3>Odyssey Focus</h3>
       <div class="log-stack">Java · Android SDK</div>
       <ul>
-        <li>Native Android app that helps people block distracting apps and stay on task</li>
+        <li>Native Android anti-procrastination app that helps people block distracting apps and stay on task</li>
+        <li>Includes time-out and curfew features for blocked apps</li>
         <li>Reads installed apps via PackageManager and handles Android 11+ package visibility rules</li>
       </ul>
       <div class="log-links">
-        <a href="#">View on GitHub</a>
+        <a href="https://github.com/PlayerOne-bit">View on GitHub</a>
       </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-meta">
+        <span class="log-version">School project</span>
+        <span class="status-tag">Proposal</span>
+      </div>
+      <h3>STI Legazpi eVoter</h3>
+      <div class="log-stack">Flutter</div>
+      <ul>
+        <li>Voting system designed to replace the current election process at STI College Legazpi</li>
+        <li>Supports voting seasons and candidate management for future elections</li>
+      </ul>
+      <div class="log-links">
+        <a href="https://github.com/PlayerOne-bit">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head">
+      <span class="index">03</span>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-meta">
+        <span class="log-version">March 2020 – October 2026</span>
+        <span class="status-tag">Freelance</span>
+      </div>
+      <h3>IT Support</h3>
+      <div class="log-stack">JCKC Accounting &amp; Bookkeeping Services</div>
+      <ul>
+        <li>Built a software app that speeds up SLSP preparation, BIR form filing, document sorting, and taxpayer confirmation checks</li>
+        <li>Prepared SLSP reports, encoded affidavits, and recorded financial transactions</li>
+        <li>Managed client databases in MS Access and provided basic IT support</li>
+      </ul>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-meta">
+        <span class="log-version">February 2024</span>
+        <span class="status-tag">Work immersion</span>
+      </div>
+      <h3>Graphic Designer</h3>
+      <div class="log-stack">Joran's Advertising</div>
+      <ul>
+        <li>Edited photos and operated digital printers</li>
+        <li>Cut custom stickers and produced plate cards</li>
+      </ul>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-meta">
+        <span class="log-version">2024 – 2028</span>
+        <span class="status-tag">Ongoing</span>
+      </div>
+      <h3>BS Information Technology</h3>
+      <div class="log-stack">STI College Legazpi</div>
+      <ul>
+        <li>Coursework: Computer Programming, Data Structures and Algorithms, Application Development and Emerging Technologies, Advanced Database Systems, Network Technology, Object-Oriented Programming, Event-Driven Programming</li>
+      </ul>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-meta">
+        <span class="log-version">2025 &amp; 2026</span>
+        <span class="status-tag">Competition</span>
+      </div>
+      <h3>Code Fest (Local &amp; Cluster)</h3>
+      <div class="log-stack">Full-Stack Developer</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-meta">
+        <span class="log-version">September 30, 2026</span>
+        <span class="status-tag">Certificate</span>
+      </div>
+      <h3>Full-Stack Development</h3>
+      <div class="log-stack">Johannes Berger</div>
     </div>
   </section>
 
   <section id="skills">
     <div class="section-head">
-      <span class="index">03</span>
+      <span class="index">04</span>
       <h2>Skills</h2>
     </div>
     <div class="skill-group">
-      <h3>Languages &amp; frameworks</h3>
+      <h3>Web</h3>
       <div class="chip-row">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
         <span class="chip">JavaScript</span>
-        <span class="chip">React</span>
-        <span class="chip">React Native</span>
+        <span class="chip">React.js</span>
         <span class="chip">Node.js</span>
         <span class="chip">Express</span>
-        <span class="chip">Java</span>
-        <span class="chip">C#</span>
-        <span class="chip">C++</span>
       </div>
     </div>
     <div class="skill-group">
-      <h3>Data &amp; backend</h3>
+      <h3>Mobile</h3>
       <div class="chip-row">
-        <span class="chip">MongoDB</span>
+        <span class="chip">Android Studio (Java)</span>
+        <span class="chip">React Native</span>
+        <span class="chip">Expo</span>
+        <span class="chip">Flutter</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Game development &amp; 3D</h3>
+      <div class="chip-row">
+        <span class="chip">Unity</span>
+        <span class="chip">C#</span>
+        <span class="chip">C++</span>
+        <span class="chip">Blender</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Backend</h3>
+      <div class="chip-row">
         <span class="chip">Supabase</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">ASP.NET</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Databases</h3>
+      <div class="chip-row">
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">SQLite</span>
+        <span class="chip">MongoDB</span>
       </div>
     </div>
     <div class="skill-group">
       <h3>Tools</h3>
       <div class="chip-row">
-        <span class="chip">Expo</span>
-        <span class="chip">Unity</span>
-        <span class="chip">Android Studio</span>
-        <span class="chip">Blender</span>
-        <span class="chip">Git</span>
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">Figma</span>
+        <span class="chip">VS Code</span>
+        <span class="chip">Visual Studio Community</span>
+        <span class="chip">Claude</span>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="section-head">
-      <span class="index">04</span>
+      <span class="index">05</span>
       <h2>Contact</h2>
     </div>
     <div class="contact-grid">
       <div class="contact-card">
         <h3>Hiring for a role?</h3>
         <p>Take a look at my resume or check the code behind these projects.</p>
-        <a href="#" class="btn btn-primary">Download resume</a>
+        <a href="Joven_Claudio_CV_2026.docx" class="btn btn-primary" download>Download resume</a>
       </div>
       <div class="contact-card">
         <h3>Need something built?</h3>
         <p>Tell me about the project and I'll get back to you.</p>
-        <a href="mailto:[email protected]" class="btn btn-ghost">Send an email</a>
+        <a href="mailto:jovenkclaudio24@gmail.com" class="btn btn-ghost">Send an email</a>
       </div>
+    </div>
+    <div class="log-links" style="margin-top: 28px;">
+      <a href="mailto:jovenkclaudio24@gmail.com">jovenkclaudio24@gmail.com</a>
+      <a href="https://github.com/PlayerOne-bit">GitHub</a>
+      <a href="https://www.linkedin.com/in/joven-claudio-83519437b/">LinkedIn</a>
     </div>
   </section>
 
   <footer>
-    <span>Wakai — Level Origin</span>
+    <span>Wakai (Joven Claudio)</span>
     <span>Naga, Philippines</span>
   </footer>
 
