@@ -230,16 +230,16 @@
   }
 
   /* PORTRAIT */
-  .hero-side {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+  .about-grid {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 36px;
+    align-items: start;
   }
   .portrait {
     position: relative;
-    width: 100%;
-    min-width: 168px;
-    aspect-ratio: 4 / 5;
+    width: 160px;
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--border);
@@ -249,7 +249,7 @@
     justify-content: center;
     text-align: center;
     padding: 12px;
-    font-size: 13px;
+    font-size: 12.5px;
     color: var(--ink-soft);
   }
   .portrait img {
@@ -260,7 +260,8 @@
     object-fit: cover;
   }
   @media (max-width: 640px) {
-    .portrait { max-width: 220px; }
+    .about-grid { grid-template-columns: 1fr; gap: 24px; }
+    .portrait { width: 140px; }
   }
 
   /* SECTION HEADERS */
@@ -437,16 +438,10 @@
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
     </div>
-    <div class="hero-side">
-      <figure class="portrait">
-        <span>Add your photo as photo.jpg</span>
-        <img src="photo.jpg" alt="Portrait of Wakai (Joven Claudio)" onerror="this.style.display='none'">
-      </figure>
-      <div class="stat-panel">
+    <div class="stat-panel">
       <div class="stat-label">Currently</div>
       <div class="stat-value">Year 3</div>
       <div class="stat-note">BS Information Technology at STI College Legazpi, shipping real projects since year one.</div>
-      </div>
     </div>
   </section>
 
@@ -455,9 +450,15 @@
       <span class="index">01</span>
       <h2>About</h2>
     </div>
-    <div class="about-text">
+    <div class="about-grid">
+      <figure class="portrait">
+        <span>Add your photo as photo.jpg</span>
+        <img src="photo.jpg" alt="Portrait of Wakai (Joven Claudio)" onerror="this.style.display='none'">
+      </figure>
+      <div class="about-text">
       <p>I originally set out to study accounting — that plan didn't work out, and I ended up at STI College instead. It turned out to be the right accident: STI is known for its game development track, which connected straight back to a dream I'd had since elementary school.</p>
       <p>Since then the plan has been simple — <strong>build a stable career as a software developer</strong>, and keep game development alive as a craft I care about on the side. I started with C++ fundamentals before first year even began, moved fast through Java, and by second year was directing a small team through our first game jam. Now in third year, I'm building real, shippable projects instead of just class exercises, with a focus on apps that solve real problems and clean, polished interfaces.</p>
+      </div>
     </div>
   </section>
 
